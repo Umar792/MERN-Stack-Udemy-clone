@@ -76,10 +76,10 @@ const course = [
 ];
 const Courses = () => {
   return (
-    <div className="flex flex-col justify-center place-items-center p-4">
+    <div className="flex flex-col justify-center place-items-center p-4 text-white bg-[#1A2238]">
       <h2 className="text-center py-3 mb-3 text-5xl font-bold">All Courses</h2>
       {/* =============== */}
-      <div className="flex gap-[10px] my-3 w-[800px] overflow-auto py-4">
+      <div className="flex hidescroll gap-[10px] my-3 w-[800px] overflow-auto py-4">
         {category &&
           category.map((item) => {
             return (
@@ -110,7 +110,7 @@ const ShowcourseCrda = ({ data }) => {
           return (
             <div
               key={item.id}
-              className="w-[250px] border-2 cursor-pointer hover:shadow-2xl  border-[gray] hover:border-0 p-[10px]"
+              className="w-[250px] border-2 cursor-pointer hover:shadow-lg hover:shadow-[gray]  border-[gray] hover:border-0 p-[10px]"
             >
               <img
                 src={item.image}

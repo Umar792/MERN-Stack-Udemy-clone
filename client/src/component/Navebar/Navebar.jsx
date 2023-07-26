@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const Navebar = ({ shownavebar, setShoenavebar }) => {
   return (
     <div
-      className={`fixed left-0 top-0 h-[100vh] bg-gray-500 w-[300px] border-r-2 border-l-white transform ${
+      className={`fixed left-0 top-0 h-[100vh] bg-[#1A2238] z-20 w-[300px] border-r-2 border-l-white transform ${
         shownavebar ? "translate-x-0" : "-translate-x-full"
       } transition text-white`}
     >

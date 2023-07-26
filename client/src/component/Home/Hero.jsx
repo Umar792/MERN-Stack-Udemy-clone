@@ -3,7 +3,7 @@ import HeroImg from "../../Assets/images/hero.png";
 
 const Hero = () => {
   return (
-    <div className="text-white w-full h-[100vh] flex justify-center gap-3 items-center py-[30px] px-[30px] bg-gray-500">
+    <div className="text-white w-full h-[100vh] flex justify-center gap-3 items-center py-[30px] px-[30px] bg-[#1A2238]">
       {/* <div className="hamburger"> */}
 
       {/* </div> */}

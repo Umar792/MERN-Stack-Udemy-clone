@@ -9,6 +9,7 @@ import Registration from "./component/Accounts/Registration/Registration";
 import ForgotPassword from "./component/Accounts/fotgotpass/ForgotPassword";
 import ResetPassword from "./component/Accounts/fotgotpass/ResetPassword";
 import RequestNewCourse from "./component/AllCourses/RequestNewCourse";
+import Pagenotfound from "./component/PagenotFound/Pagenotfound";
 
 const App = () => {
   const [shownavebar, setShoenavebar] = useState(false);
@@ -57,6 +58,7 @@ const App = () => {
         <Route exact path="/forgotpassword" element={<ForgotPassword />} />
         <Route exact path="/resetpassword" element={<ResetPassword />} />
         <Route exact path="/requestcourse" element={<RequestNewCourse />} />
+        <Route exact path="*" element={<Pagenotfound />} />
       </Routes>
     </BrowserRouter>
   );
