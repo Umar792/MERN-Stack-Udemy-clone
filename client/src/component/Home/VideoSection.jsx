@@ -9,7 +9,14 @@ const VideoSection = () => {
       </h1>
 
       {/* ===================== video  */}
-      <video autoPlay src={video} width="100%" />
+      <div className="w-full p-6 flex justify-center align-middle">
+        <video
+          autoPlay
+          controls
+          src={video}
+          className="w-[60%]  shadow-black-6xl border-2 border-gray"
+        />
+      </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import HeroImg from "../../Assets/images/hero.png";
 import { BiMenuAltRight } from "react-icons/bi";
+import Navebar from "../Navebar/Navebar";
 
 const Hero = () => {
   const [scroll, setscroll] = useState(false);
@@ -52,6 +53,7 @@ const Hero = () => {
           className="w-[500px] object-contain animate-spin-slow"
         />
       </div>
+      <Navebar />
     </div>
   );
 };
