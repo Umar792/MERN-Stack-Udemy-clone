@@ -1,37 +1,11 @@
 import React, { useEffect, useState } from "react";
 import HeroImg from "../../Assets/images/hero.png";
-import { BiMenuAltRight } from "react-icons/bi";
-import Navebar from "../Navebar/Navebar";
 
 const Hero = () => {
-  const [scroll, setscroll] = useState(false);
-
-  const handleScroll = () => {
-    const ScrollY = window.screenY || document.documentElement.scrollTop;
-    const hy = window.innerHeight;
-    if (ScrollY >= hy) {
-      setscroll(true);
-    } else {
-      setscroll(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("scroll", handleScroll);
-
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div className="text-white w-full h-[100vh] flex justify-center gap-3 items-center py-[30px] px-[30px] bg-gray-500">
       {/* <div className="hamburger"> */}
-      <BiMenuAltRight
-        className={`fixed top-[10px] left-[20px] text-3xl cursor-pointer ${
-          scroll ? "text-black" : "text-white"
-        } `}
-      />
+
       {/* </div> */}
       <div className="hero_left">
         <h2 className="text-[50px] w-[350px] my-3 font-bold font-serif">
@@ -53,7 +27,6 @@ const Hero = () => {
           className="w-[500px] object-contain animate-spin-slow"
         />
       </div>
-      <Navebar />
     </div>
   );
 };

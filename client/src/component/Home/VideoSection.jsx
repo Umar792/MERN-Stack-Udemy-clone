@@ -11,7 +11,7 @@ const VideoSection = () => {
       {/* ===================== video  */}
       <div className="w-full p-6 flex justify-center align-middle">
         <video
-          autoPlay
+          // autoPlay
           controls
           src={video}
           className="w-[60%]  shadow-black-6xl border-2 border-gray"
